@@ -10,11 +10,11 @@ bit based request/response messages:
 * Read Coils
 '''
 import unittest
-from pymodbus.file_message import *
-from pymodbus.exceptions import *
-from pymodbus.pdu import ModbusExceptions
 
-from .modbus_mocks import MockContext
+from pymodbus.file_message import *
+from pymodbus.pdu import ModbusExceptions
+from pymodbus.test.modbus_mocks import MockContext
+
 
 #---------------------------------------------------------------------------#
 # Fixture

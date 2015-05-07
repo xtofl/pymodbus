@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 import unittest
+
 from pymodbus.exceptions import NotImplementedException
 from pymodbus.datastore.remote import RemoteSlaveContext
 from pymodbus.bit_read_message import *
 from pymodbus.bit_write_message import *
 from pymodbus.register_read_message import *
 from pymodbus.pdu import ExceptionResponse
-from .modbus_mocks import mock
+from pymodbus.test.modbus_mocks import mock
+
 
 class RemoteModbusDataStoreTest(unittest.TestCase):
     '''

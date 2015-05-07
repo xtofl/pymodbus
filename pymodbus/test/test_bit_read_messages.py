@@ -8,15 +8,16 @@ bit based request/response messages:
 * Read/Write Discretes
 * Read Coils
 '''
-import unittest, struct
+import unittest
+import struct
+
 from pymodbus.bit_read_message import *
 from pymodbus.bit_read_message import ReadBitsRequestBase
 from pymodbus.bit_read_message import ReadBitsResponseBase
-from pymodbus.exceptions import *
 from pymodbus.pdu import ModbusExceptions
 from pymodbus.compat import iteritems
+from pymodbus.test.modbus_mocks import MockContext
 
-from .modbus_mocks import MockContext
 
 #---------------------------------------------------------------------------#
 # Fixture

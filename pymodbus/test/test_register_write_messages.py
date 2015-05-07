@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 import unittest
+
 from pymodbus.register_write_message import *
-from pymodbus.exceptions import ParameterException
 from pymodbus.pdu import ModbusExceptions
 from pymodbus.compat import iteritems, iterkeys
+from pymodbus.test.modbus_mocks import MockContext
 
-from .modbus_mocks import MockContext
 
 #---------------------------------------------------------------------------#
 # Fixture

@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import unittest
+
 from pymodbus.register_read_message import *
 from pymodbus.register_read_message import ReadRegistersRequestBase
 from pymodbus.register_read_message import ReadRegistersResponseBase
-from pymodbus.exceptions import *
 from pymodbus.pdu import ModbusExceptions
 from pymodbus.compat import iteritems, iterkeys, get_next
+from pymodbus.test.modbus_mocks import MockContext, FakeList
 
-from .modbus_mocks import MockContext, FakeList
 
 #---------------------------------------------------------------------------#
 # Fixture
