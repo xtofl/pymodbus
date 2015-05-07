@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import unittest
-from mock import patch, Mock
 from pymodbus.device import ModbusDeviceIdentification
 from pymodbus.server.async import ModbusTcpProtocol, ModbusUdpProtocol
 from pymodbus.server.async import ModbusServerFactory
